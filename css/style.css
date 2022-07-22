@@ -11,6 +11,11 @@ body {
     text-align: center;
     background: linear-gradient(to bottom, #6ab7f5, #fff);
     min-height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main {
@@ -21,7 +26,7 @@ main {
 }
 
 .pokedex {
-    width: 100%;
+    width: 95%;
     max-width: 425px;
 }
 
