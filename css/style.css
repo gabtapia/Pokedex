@@ -9,7 +9,7 @@
 
 body {
     text-align: center;
-    background: linear-gradient(to bottom, #6ab7f5, #fff);
+    background: #0d0d0d;
     min-height: 100vh;
     width: 100vw;
     overflow: hidden;
@@ -20,43 +20,86 @@ body {
 
 main {
     display: inline-block;
+    position: relative;
     margin-top: 2%;
     padding: 15px;
-    position: relative;
+    width: 75%;
+    height: 20vh;
+    background-color: #d3d1d1;
+    border-radius: 10px;
 }
 
-.pokedex {
-    width: 95%;
-    max-width: 425px;
+.pokemon-img {
+    background: #333;
+    height: 100%;
+    width: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .pokemon-image {
-    position: absolute;
-    bottom: 55%;
-    left: 50%;
-    transform: translate(-63%, 20%);
-    height: 18%;
+    width: 50%;
+    border-radius: 5px;
 }
 
 .pokemon-data {
     position: absolute;
     font-weight: 600;
-    color: #aaa;
-    top: 54.5%;
-    right: 27%;
-    font-size: clamp(8px, 5vw, 25px);
+    color: #666;
+    top: 10%;
+    left: 18%;
+    font-size: clamp(5px, 5vw, 25px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .pokemon-name {
     color: #3a444d;
     text-transform: capitalize;
+    margin-right: 10px;
+}
+
+.pokemon-type {
+    color: #3a444d;
+    text-transform: capitalize;
+    margin-right: 10px;
+}
+
+.div-hp {
+    width: 400px;
+    height: 20px;
+    color: #fff;
+    border-radius: 10px;
+    border: 2px #333 solid;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 1160px) {
+    .div-hp {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .div-hp {
+        width: 250px;
+    }
+}
+
+.pokemon-hp {
+    border-radius: 10px;
+    background-color: red;
+    height: 100%;
 }
 
 .form {
     position: absolute;
-    width: 65%;
-    top: 65%;
-    left: 13.5%;
+    width: 35%;
+    top: 40%;
+    left: 18%;
 }
 
 .input-search {
@@ -73,10 +116,9 @@ main {
 
 .buttons {
     position: absolute;
-    bottom: 10%;
-    left: 50%;
-    width: 65%;
-    transform: translate(-57%, 0);
+    right: 15%;
+    top: 40%;
+    width: 30%;
     display: flex;
     gap: 20px;
 }
@@ -96,4 +138,8 @@ main {
 .button:active {
     box-shadow: inset -4px 4px 0 #222;
     font-size: 0.9rem;
+}
+
+@media screen and (max-width: 910px) {
+    
 }
